@@ -948,7 +948,7 @@
         "type": "string"
       },
       "TradeStatus": {
-        "description": "\n    Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and\n    `TradePaymentStatus`.\n    ",
+        "description": "\\n    Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and\\n    `TradePaymentStatus`.\\n    ",
         "enum": [
           "Approved",
           "Rejected",
