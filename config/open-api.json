@@ -1652,6 +1652,7 @@
     }
   },
   "info": {
+    "description": "This is the Public Nook API. You can use this portal to explore the Nook API or acquire API Keys.",
     "title": "Public Nook API",
     "version": "v1"
   },
@@ -2465,6 +2466,28 @@
   "servers": [
     {
       "url": "/external"
+    }
+  ],
+  "tags": [
+    {
+      "description": "Endpoints that provide information about the user and API calls, mainly for debugging.",
+      "name": "Info"
+    },
+    {
+      "description": "Endpoints related to creating or fetching bills. You can read more about Bills [here](https://www.google.com).",
+      "name": "Bills"
+    },
+    {
+      "description": "Endpoints related to companies in the Nook catalog.",
+      "name": "Companies"
+    },
+    {
+      "description": "Endpoints related to creating or fetching invoices. You can read more about Invoices [here](https://www.google.com).",
+      "name": "Invoices"
+    },
+    {
+      "description": "A `network` is a model to represent the relation of companies to each other. Each company belongs to a network",
+      "name": "Network"
     }
   ]
 }
