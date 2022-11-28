@@ -261,44 +261,53 @@
       "BillLineItem": {
         "properties": {
           "bill_account_id": {
+            "description": "A description for this item",
             "nullable": true,
             "title": "Bill Account Id",
             "type": "string"
           },
           "bill_item_id": {
+            "description": "A description for this item",
             "nullable": true,
             "title": "Bill Item Id",
             "type": "string"
           },
           "bill_tax_rate_id": {
+            "description": "A description for this item",
             "nullable": true,
             "title": "Bill Tax Rate Id",
             "type": "string"
           },
           "description": {
+            "description": "A description for this item",
             "title": "Description",
             "type": "string"
           },
           "discount_rate": {
             "default": 0,
+            "description": "A description for this item",
             "title": "Discount Rate",
             "type": "number"
           },
           "quantity": {
+            "description": "A description for this item",
             "title": "Quantity",
             "type": "number"
           },
           "tax_adjustment": {
+            "description": "A description for this item",
             "nullable": true,
             "title": "Tax Adjustment",
             "type": "number"
           },
           "tax_override": {
+            "description": "A description for this item",
             "nullable": true,
             "title": "Tax Override",
             "type": "number"
           },
           "unit_amount": {
+            "description": "A description for this item",
             "title": "Unit Amount",
             "type": "number"
           }
@@ -948,7 +957,7 @@
         "type": "string"
       },
       "TradeStatus": {
-        "description": "\\n    Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and\\n    `TradePaymentStatus`.\\n    ",
+        "description": "Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and, `TradePaymentStatus`.",
         "enum": [
           "Approved",
           "Rejected",
@@ -1026,6 +1035,7 @@
         "type": "object"
       },
       "app__external_api__v1__schemas__create_schema__Bill": {
+        "description": "Data model for a Bill created in Nook.",
         "properties": {
           "credit_note_number": {
             "description": "An invoice number for the trade",
@@ -1664,6 +1674,7 @@
         "operationId": "get_bills_api_v1_bills_get",
         "parameters": [
           {
+            "description": "Index to start fetching from.",
             "in": "query",
             "name": "start",
             "required": false,
@@ -1675,6 +1686,7 @@
             }
           },
           {
+            "description": "Number of items to fetch from start onwards.",
             "in": "query",
             "name": "limit",
             "required": false,
@@ -1686,6 +1698,7 @@
             }
           },
           {
+            "description": "Bill name.",
             "in": "query",
             "name": "name",
             "required": false,
@@ -1712,6 +1725,7 @@
             }
           },
           {
+            "description": "Filter to draft bills only.",
             "in": "query",
             "name": "is_draft",
             "required": false,
@@ -1722,6 +1736,7 @@
             }
           },
           {
+            "description": "Filter to draft approved only.",
             "in": "query",
             "name": "is_approved",
             "required": false,
@@ -1732,6 +1747,7 @@
             }
           },
           {
+            "description": "Filter to draft overdue only.",
             "in": "query",
             "name": "is_overdue",
             "required": false,
@@ -1742,6 +1758,7 @@
             }
           },
           {
+            "description": "ID of the supplier.",
             "in": "query",
             "name": "supplier_id",
             "required": false,
@@ -1752,6 +1769,7 @@
             }
           },
           {
+            "description": "Return bills with due dates on or after this date.",
             "in": "query",
             "name": "due_date_start",
             "required": false,
@@ -1763,6 +1781,7 @@
             }
           },
           {
+            "description": "Return bills with due dates on or before this date.",
             "in": "query",
             "name": "due_date_end",
             "required": false,
@@ -1788,6 +1807,7 @@
             }
           },
           {
+            "description": "The company ID you are retrieving bills for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -1834,6 +1854,7 @@
         "operationId": "create_bill_api_v1_bills_post",
         "parameters": [
           {
+            "description": "The company ID you are retrieving bills for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -1918,6 +1939,7 @@
             }
           },
           {
+            "description": "The company ID you are retrieving bills for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -1966,6 +1988,7 @@
         "operationId": "me_api_v1_companies_me_get",
         "parameters": [
           {
+            "description": "The ID of the company you are retrieving. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2014,6 +2037,7 @@
         "operationId": "info_api_v1_info_get",
         "parameters": [
           {
+            "description": "The company ID you are retrieving info for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2183,6 +2207,7 @@
             }
           },
           {
+            "description": "The company ID you are retrieving invoices for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2229,6 +2254,7 @@
         "operationId": "create_invoice_api_v1_invoices_post",
         "parameters": [
           {
+            "description": "The company ID you are retrieving an invoice for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2313,6 +2339,7 @@
             }
           },
           {
+            "description": "The company ID you are retrieving invoice for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2420,6 +2447,7 @@
             }
           },
           {
+            "description": "The company ID you are retrieving networks for. You can find your company ID [here](https://www.google.com).",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
