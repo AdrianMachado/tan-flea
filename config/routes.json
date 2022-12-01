@@ -27,7 +27,8 @@
   "versions": [
     {
       "name": "none",
-      "pathPrefix": ""
+      "pathPrefix": "",
+      "openApiFile": "open-api.json"
     },
     {
       "name": "v1",
