@@ -1799,11 +1799,7 @@
             "name": "sort",
             "required": false,
             "schema": {
-              "allOf": [
-                {
-                  "$ref": "#/components/schemas/TradeSort"
-                }
-              ],
+              "$ref": "#/components/schemas/TradeSort",
               "default": "DueDate",
               "nullable": true
             }
