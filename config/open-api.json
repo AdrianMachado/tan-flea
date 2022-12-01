@@ -951,7 +951,7 @@
         "type": "string"
       },
       "TradeSort": {
-        "description": "An enumeration.",
+        "description": "An enumeration of properties upon which a trade can be sorted.",
         "enum": ["Total", "DueDate", "PaymentDate"],
         "title": "TradeSort",
         "type": "string"
@@ -1716,11 +1716,7 @@
             "schema": {
               "default": [],
               "items": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/TradeStatus"
-                  }
-                ]
+                "$ref": "#/components/schemas/TradeStatus"
               },
               "type": "array"
             }
