@@ -957,7 +957,7 @@
         "type": "string"
       },
       "TradeStatus": {
-        "description": "Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and, `TradePaymentStatus`.",
+        "description": "Enumerator combining `ApprovalStatus`, `TradeStatusInternal` and, `TradePaymentStatus`. This covers all the possible statuses of a trade.",
         "enum": [
           "Approved",
           "Rejected",
@@ -1670,11 +1670,11 @@
   "paths": {
     "/api/v1/bills": {
       "get": {
-        "description": "Get bills.",
+        "description": "Get bills. Mauris pretium nunc in facilisis efficitur. Nulla iaculis, ligula vel rhoncus mollis, purus ex porttitor nisl, id aliquet lectus justo.",
         "operationId": "get_bills_api_v1_bills_get",
         "parameters": [
           {
-            "description": "Index to start fetching from.",
+            "description": "Index to start fetching from. By default we start from the first index, if no index is specified.",
             "in": "query",
             "name": "start",
             "required": false,
@@ -1686,7 +1686,7 @@
             }
           },
           {
-            "description": "Number of items to fetch from start onwards.",
+            "description": "Number of items to fetch from start onwards. By default we will fetch 100 items if no limit is specified.",
             "in": "query",
             "name": "limit",
             "required": false,
@@ -1698,7 +1698,7 @@
             }
           },
           {
-            "description": "Bill name.",
+            "description": "Bill name. Mauris pretium nunc in facilisis efficitur. Nulla iaculis, ligula vel rhoncus mollis, purus ex porttitor nisl, id aliquet lectus justo.",
             "in": "query",
             "name": "name",
             "required": false,
@@ -1709,6 +1709,7 @@
             }
           },
           {
+            "description": "The status of the bills you want to see. You can specify multiple, or none to see bills of any status.",
             "in": "query",
             "name": "status[]",
             "required": false,
@@ -1725,7 +1726,7 @@
             }
           },
           {
-            "description": "Filter to draft bills only.",
+            "description": "Filter to draft bills only. By default we will return both draft and non-draft bills.",
             "in": "query",
             "name": "is_draft",
             "required": false,
@@ -1736,7 +1737,7 @@
             }
           },
           {
-            "description": "Filter to draft approved only.",
+            "description": "Filter to draft approved only. By default we will return both approved and unapproved bills.",
             "in": "query",
             "name": "is_approved",
             "required": false,
@@ -1747,7 +1748,7 @@
             }
           },
           {
-            "description": "Filter to draft overdue only.",
+            "description": "Filter to draft overdue only. By default we will return both overdue and non-overdue bills.",
             "in": "query",
             "name": "is_overdue",
             "required": false,
@@ -1758,7 +1759,7 @@
             }
           },
           {
-            "description": "ID of the supplier.",
+            "description": "ID of the supplier. You can find this supplier ID within your Nook supplier page. [Read the docs](https://www.google.com)",
             "in": "query",
             "name": "supplier_id",
             "required": false,
@@ -1793,6 +1794,7 @@
             }
           },
           {
+            "description": "Determines which property you wish to sort the bills upon.",
             "in": "query",
             "name": "sort",
             "required": false,
