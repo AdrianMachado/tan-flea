@@ -259,21 +259,22 @@
         "type": "object"
       },
       "BillLineItem": {
+        "description": "Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
         "properties": {
           "bill_account_id": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Bill Account Id",
             "type": "string"
           },
           "bill_item_id": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Bill Item Id",
             "type": "string"
           },
           "bill_tax_rate_id": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Bill Tax Rate Id",
             "type": "string"
@@ -285,29 +286,29 @@
           },
           "discount_rate": {
             "default": 0,
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "title": "Discount Rate",
             "type": "number"
           },
           "quantity": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "title": "Quantity",
             "type": "number"
           },
           "tax_adjustment": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Tax Adjustment",
             "type": "number"
           },
           "tax_override": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Tax Override",
             "type": "number"
           },
           "unit_amount": {
-            "description": "A description for this item",
+            "description": "A description for this item. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "title": "Unit Amount",
             "type": "number"
           }
@@ -460,6 +461,7 @@
         "type": "object"
       },
       "InvoiceLineItem": {
+        "description": "Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
         "properties": {
           "description": {
             "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
@@ -1047,7 +1049,7 @@
         "description": "Data model for a Bill created in Nook.",
         "properties": {
           "credit_note_number": {
-            "description": "An invoice number for the trade. You can retrieve this from mauris pretium nunc in facilisis efficitur.",
+            "description": "An invoice number for the trade. You can retrieve this from mauris pretium nunc in facilisis efficitur. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "maxLength": 100,
             "nullable": true,
             "title": "Credit Note Number",
@@ -1060,7 +1062,7 @@
             "type": "string"
           },
           "due_date": {
-            "description": "The due date of the bill. This may not be set in the past, unless mauris pretium nunc in facilisis efficitur.",
+            "description": "The due date of the bill. This may not be set in the past, unless mauris pretium nunc in facilisis efficitur. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "format": "date",
             "nullable": true,
             "title": "Due Date",
@@ -1068,20 +1070,20 @@
           },
           "inclusive_tax": {
             "default": false,
-            "description": "Indicated that this bill includes tax already. Taxing is determined by am in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
+            "description": "Indicated that this bill includes tax already. Taxing is determined by am in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "nullable": true,
             "title": "Inclusive Tax",
             "type": "boolean"
           },
           "invoice_number": {
-            "description": "An invoice number for the trade",
+            "description": "An invoice number for the trade. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "maxLength": 100,
             "nullable": true,
             "title": "Invoice Number",
             "type": "string"
           },
           "issue_date": {
-            "description": "The issue date of the bill",
+            "description": "The issue date of the bill. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "format": "date",
             "nullable": true,
             "title": "Issue Date",
@@ -1097,7 +1099,7 @@
             "type": "array"
           },
           "order_date": {
-            "description": "The order date of the bill",
+            "description": "The order date of the bill. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum. Suspendisse sagittis justo sit amet ex maximus rhoncus. Maecenas bibendum.",
             "format": "date",
             "nullable": true,
             "title": "Order Date",
