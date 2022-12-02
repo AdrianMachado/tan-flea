@@ -2,7 +2,7 @@
   "components": {
     "schemas": {
       "AccountingPlatform": {
-        "description": "An enumeration.",
+        "description": "An enumeration of the different accounting platforms supported on Nook. If you would like us to add another accounting platform, please fill out [this form](https://www.google.com)",
         "enum": [
           "xero",
           "quickbooks",
@@ -462,44 +462,53 @@
       "InvoiceLineItem": {
         "properties": {
           "description": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Description",
             "type": "string"
           },
           "discount_rate": {
             "default": 0,
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Discount Rate",
             "type": "number"
           },
           "invoice_account_id": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Invoice Account Id",
             "type": "string"
           },
           "invoice_item_id": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Invoice Item Id",
             "type": "string"
           },
           "invoice_tax_rate_id": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Invoice Tax Rate Id",
             "type": "string"
           },
           "quantity": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Quantity",
             "type": "number"
           },
           "tax_adjustment": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Tax Adjustment",
             "type": "number"
           },
           "tax_override": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Tax Override",
             "type": "number"
           },
           "unit_amount": {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Unit Amount",
             "type": "number"
           }
@@ -1038,7 +1047,7 @@
         "description": "Data model for a Bill created in Nook.",
         "properties": {
           "credit_note_number": {
-            "description": "An invoice number for the trade",
+            "description": "An invoice number for the trade. You can retrieve this from mauris pretium nunc in facilisis efficitur.",
             "maxLength": 100,
             "nullable": true,
             "title": "Credit Note Number",
@@ -1051,7 +1060,7 @@
             "type": "string"
           },
           "due_date": {
-            "description": "The due date of the bill",
+            "description": "The due date of the bill. This may not be set in the past, unless mauris pretium nunc in facilisis efficitur.",
             "format": "date",
             "nullable": true,
             "title": "Due Date",
@@ -1059,6 +1068,7 @@
           },
           "inclusive_tax": {
             "default": false,
+            "description": "Indicated that this bill includes tax already. Taxing is determined by am in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "nullable": true,
             "title": "Inclusive Tax",
             "type": "boolean"
@@ -1113,6 +1123,7 @@
               }
             ],
             "default": "AwaitingPayment",
+            "description": "Status of the bill, as represented with a `PurchaseStatus`.",
             "nullable": true
           },
           "supplier_trading_entity_id": {
@@ -1122,6 +1133,7 @@
           },
           "visible_to_supplier": {
             "default": false,
+            "description": "Whether or not this bill will be visible to the supplier trading entity. By default we hide this to avoid data leakage.",
             "title": "Visible To Supplier",
             "type": "boolean"
           }
@@ -1131,9 +1143,10 @@
         "type": "object"
       },
       "app__external_api__v1__schemas__create_schema__Invoice": {
+        "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
         "properties": {
           "credit_note_number": {
-            "description": "An invoice number for the trade",
+            "description": "An invoice number for the trade. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "maxLength": 100,
             "nullable": true,
             "title": "Credit Note Number",
@@ -1146,26 +1159,26 @@
             "type": "string"
           },
           "customer_trading_entity_id": {
-            "description": "The unique identifier of the customer trading entity",
+            "description": "The unique identifier of the customer trading entity. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Customer Trading Entity Id",
             "type": "integer"
           },
           "due_date": {
-            "description": "The due date of the bill",
+            "description": "The due date of the bill. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "format": "date",
             "nullable": true,
             "title": "Due Date",
             "type": "string"
           },
           "invoice_number": {
-            "description": "An invoice number for the trade",
+            "description": "An invoice number for the trade. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "maxLength": 100,
             "nullable": true,
             "title": "Invoice Number",
             "type": "string"
           },
           "issue_date": {
-            "description": "The issue date of the bill",
+            "description": "The issue date of the bill. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "format": "date",
             "nullable": true,
             "title": "Issue Date",
@@ -1181,21 +1194,21 @@
             "type": "array"
           },
           "order_date": {
-            "description": "The order date of the bill",
+            "description": "The order date of the bill. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "format": "date",
             "nullable": true,
             "title": "Order Date",
             "type": "string"
           },
           "order_number": {
-            "description": "An order number for the trade",
+            "description": "An order number for the trade. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "maxLength": 100,
             "nullable": true,
             "title": "Order Number",
             "type": "string"
           },
           "reference": {
-            "description": "A reference number for bill",
+            "description": "A reference number for bill. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true,
             "title": "Reference",
             "type": "string"
@@ -1207,10 +1220,12 @@
               }
             ],
             "default": "AwaitingPayment",
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "nullable": true
           },
           "visible_to_customer": {
             "default": false,
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "title": "Visible To Customer",
             "type": "boolean"
           }
@@ -1766,7 +1781,7 @@
             }
           },
           {
-            "description": "Return bills with due dates on or after this date.",
+            "description": "Return bills with due dates on or after this date. Mauris pretium nunc in facilisis efficitur. Mauris pretium nunc in facilisis efficitur.",
             "in": "query",
             "name": "due_date_start",
             "required": false,
@@ -1778,7 +1793,7 @@
             }
           },
           {
-            "description": "Return bills with due dates on or before this date.",
+            "description": "Return bills with due dates on or before this date. Mauris pretium nunc in facilisis efficitur. Mauris pretium nunc in facilisis efficitur.",
             "in": "query",
             "name": "due_date_end",
             "required": false,
@@ -1863,12 +1878,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/app__external_api__v1__schemas__create_schema__Bill"
-                  }
-                ],
-                "title": "Bill"
+                "$ref": "#/components/schemas/app__external_api__v1__schemas__create_schema__Bill"
               }
             }
           },
@@ -1912,6 +1922,7 @@
         "operationId": "get_bill_api_v1_bills__bill_id__get",
         "parameters": [
           {
+            "description": "The unique ID of the Bill. You can find these in the Nook Portal under the 'Your Bills' section. Alternatively call the [Get Bills](#get-bills) API.",
             "in": "path",
             "name": "bill_id",
             "required": true,
@@ -1927,7 +1938,7 @@
             "required": false,
             "schema": {
               "default": false,
-              "description": "Whether deleted invoices should be retrievable",
+              "description": "Whether deleted invoices should be retrievable. By default we filter these out.",
               "title": "Deleted",
               "type": "boolean"
             }
@@ -1978,7 +1989,7 @@
     },
     "/api/v1/companies/me": {
       "get": {
-        "description": "Get information about the company for whom you're calling the API.",
+        "description": "Get information about the company for whom you're calling the API. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
         "operationId": "me_api_v1_companies_me_get",
         "parameters": [
           {
@@ -2027,11 +2038,11 @@
     },
     "/api/v1/info": {
       "get": {
-        "description": "Get information about the user and the API call, useful for debugging.",
+        "description": "Get information about the user and the API call, useful for debugging. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
         "operationId": "info_api_v1_info_get",
         "parameters": [
           {
-            "description": "The company ID you are retrieving info for. You can find your company ID [here](https://www.google.com).",
+            "description": "The company ID you are retrieving info for. You can find your company ID [here](https://www.google.com). Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "header",
             "name": "nook-company-id",
             "required": false,
@@ -2070,16 +2081,17 @@
             "description": "Validation Error"
           }
         },
-        "summary": "Info",
+        "summary": "Get Info",
         "tags": ["Info"]
       }
     },
     "/api/v1/invoices": {
       "get": {
-        "description": "Get all invoices.",
+        "description": "Get all invoices. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
         "operationId": "get_invoices_api_v1_invoices_get",
         "parameters": [
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "name",
             "required": false,
@@ -2090,6 +2102,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "start",
             "required": false,
@@ -2100,6 +2113,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "limit",
             "required": false,
@@ -2110,22 +2124,20 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "status[]",
             "required": false,
             "schema": {
               "default": [],
               "items": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/TradeStatus"
-                  }
-                ]
+                "$ref": "#/components/schemas/TradeStatus"
               },
               "type": "array"
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "is_draft",
             "required": false,
@@ -2136,6 +2148,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "is_approved",
             "required": false,
@@ -2146,6 +2159,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "is_overdue",
             "required": false,
@@ -2156,6 +2170,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "customer_id",
             "required": false,
@@ -2166,6 +2181,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "due_date_start",
             "required": false,
@@ -2177,6 +2193,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "due_date_end",
             "required": false,
@@ -2188,6 +2205,7 @@
             }
           },
           {
+            "description": "Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
             "in": "query",
             "name": "sort",
             "required": false,
@@ -2308,7 +2326,7 @@
     },
     "/api/v1/invoices/{invoice_id}": {
       "get": {
-        "description": "Get the latest version of an invoice.",
+        "description": "Get the latest version of an invoice. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas. Nam in magna sagittis, volutpat mi id, pellentesque nibh. Maecenas.",
         "operationId": "get_invoice_api_v1_invoices__invoice_id__get",
         "parameters": [
           {
@@ -2382,6 +2400,7 @@
         "operationId": "get_networks_api_v1_network_get",
         "parameters": [
           {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "in": "query",
             "name": "start",
             "required": false,
@@ -2392,6 +2411,7 @@
             }
           },
           {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "in": "query",
             "name": "limit",
             "required": false,
@@ -2402,6 +2422,7 @@
             }
           },
           {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "in": "query",
             "name": "q",
             "required": false,
@@ -2412,6 +2433,7 @@
             }
           },
           {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "in": "query",
             "name": "company_status",
             "required": false,
@@ -2425,6 +2447,7 @@
             }
           },
           {
+            "description": "Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales. Maecenas non nisl enim. Curabitur elit lorem, sodales vel sodales.",
             "in": "query",
             "name": "sort",
             "required": false,
